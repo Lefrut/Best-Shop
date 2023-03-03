@@ -14,3 +14,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Best Shop"
 include ':app'
+include ':features:entry'
+include ':navigation'
+include ':dat'
+include ':domain'
