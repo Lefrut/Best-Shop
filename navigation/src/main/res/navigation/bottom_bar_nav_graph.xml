@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@id/bottom_bar_nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/bottom_bar_nav_graph"
+    app:startDestination="@id/bottomBlankFragment">
+
+    <fragment
+        android:id="@+id/bottomBlankFragment"
+        android:name="com.dashkevich.navigation.BottomBlankFragment"
+        android:label="fragment_bottom_blank"
+        tools:layout="@layout/fragment_bottom_blank" >
+        <action
+            android:id="@+id/action_bottomBlankFragment_to_home"
+            app:destination="@id/home" />
+    </fragment>
+
+    <include app:graph="@navigation/home" />
+    <include app:graph="@navigation/favorite" />
+    <include app:graph="@navigation/shop" />
+    <include app:graph="@navigation/message" />
+    <include app:graph="@navigation/profile" />
+
 
 </navigation>

@@ -42,6 +42,12 @@ dependencies {
     implementation project(':navigation')
     implementation project(':core:ui')
     implementation project(':features:bottom')
+    implementation project(':features:home')
+    implementation project(':features:favorite')
+    implementation project(':features:shop')
+    implementation project(':features:message')
+    implementation project(':features:profile')
+
 
 
     //libs
