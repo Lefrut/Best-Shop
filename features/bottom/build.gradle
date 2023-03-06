@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.dashkevich.navigation'
+    namespace 'com.dashkevich.bottom'
     compileSdk 33
 
     defaultConfig {
@@ -36,9 +36,10 @@ android {
 
 dependencies {
 
+    implementation project(':navigation')
+
     implementation project.navigationComponent
     implementation project.navigationComponentFragment
-
 
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'

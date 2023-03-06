@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.TextView.Header" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/headerText</item>
+        <item name="fontFamily">@font/montserrat_semibold</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+    
+    
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bottom_bar_nav_graph" type="id"/>
+    <item name="home" type="id"/>
+    <item name="main_nav_graph" type="id"/>
+    <item name="bottom" type="id"/>
+</resources>
