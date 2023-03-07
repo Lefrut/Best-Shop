@@ -3,6 +3,7 @@ package com.dashkevich.bestshop
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 
 class MainActivity : AppCompatActivity() {
@@ -17,5 +18,10 @@ class MainActivity : AppCompatActivity() {
         val navHost = supportFragmentManager
             .findFragmentById(R.id.main_container) as NavHostFragment
         navController = navHost.navController
+    }
+
+    @Deprecated("Deprecated in Java", ReplaceWith("navController.popBackStack()"))
+    override fun onBackPressed() {
+        navController.popBackStack()
     }
 }

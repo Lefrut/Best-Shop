@@ -25,10 +25,16 @@
         app:menu="@menu/bottom_menu"
         android:layout_width="match_parent"
         android:layout_height="63dp"
-        android:background="@color/bottom_bar"
+        android:backgroundTint="@color/bottom_bar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconSize="15dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@color/icon_ripple"
+        app:itemBackground="@drawable/item_background_selector"
+        android:background="@drawable/rectangle"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

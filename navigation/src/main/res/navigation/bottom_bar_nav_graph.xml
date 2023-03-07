@@ -12,7 +12,9 @@
         tools:layout="@layout/fragment_bottom_blank" >
         <action
             android:id="@+id/action_bottomBlankFragment_to_home"
-            app:destination="@id/home" />
+            app:destination="@id/home"
+            app:popUpTo="@id/bottomBlankFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
 
     <include app:graph="@navigation/home" />

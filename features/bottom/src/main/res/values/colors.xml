@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="focus_icon">#737297</color>
+    <color name="no_focus_icon">#909090</color>
+
     <color name="bottom_bar">#FFFFFF</color>
+    <color name="icon_ripple">#EEEFF4</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="main_screen">#FAF9FF</color>
 </resources>

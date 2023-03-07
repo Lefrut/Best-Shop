@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="location">Location</string>
+    <string name="trade_by_bata">Trade by <font color="#4E55D7">bata</font></string>
+    <string name="what_are_you_looking_for">What are you looking for ?</string>
+
+</resources>
