@@ -109,7 +109,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/navigation_bar"
             android:layout_marginStart="57dp"
-            android:layout_marginEnd="56dp">
+            android:layout_marginEnd="56dp"
+            app:placeholderText="@string/what_are_you_looking_for">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
