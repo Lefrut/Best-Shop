@@ -39,6 +39,9 @@ dependencies {
     implementation project.navigationComponent
     implementation project.navigationComponentFragment
 
+    implementation project.koin
+    implementation project.koinAndroid
+
 
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'

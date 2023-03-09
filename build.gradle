@@ -7,7 +7,11 @@ buildscript {
         nav_version = "2.5.3"
         coroutine_version = "1.6.4"
         retrofit_version = "2.9.0"
+        koin_version = "3.2.2"
+        koinAndroid_version = "3.3.0"
         //libs
+        koin = "io.insert-koin:koin-core:$koin_version"
+        koinAndroid = "io.insert-koin:koin-android:$koinAndroid_version"
         retrofit_gson = "com.squareup.retrofit2:converter-gson:$retrofit_version"
         retrofit = "com.squareup.retrofit2:retrofit:$retrofit_version"
         coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine_version"

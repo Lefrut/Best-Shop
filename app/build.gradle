@@ -37,6 +37,8 @@ android {
 }
 
 dependencies {
+    implementation project.koin
+    implementation project.koinAndroid
 
     //modules
     implementation project(':navigation')
