@@ -43,6 +43,8 @@ dependencies {
     //modules
     implementation project(':navigation')
     implementation project(':core:ui')
+    implementation project(':dat')
+    implementation project(':domain')
     implementation project(':features:bottom')
     implementation project(':features:home')
     implementation project(':features:favorite')

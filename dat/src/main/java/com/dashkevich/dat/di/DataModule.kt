@@ -28,4 +28,4 @@ val retrofitModule = module {
 
 }
 
-val dataModule = listOf(retrofitModule)
+val dataModule = module { includes(retrofitModule) }
