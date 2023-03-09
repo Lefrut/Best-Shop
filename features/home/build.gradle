@@ -38,6 +38,10 @@ dependencies {
 
     implementation project(":navigation")
     implementation project(":core:ui")
+    implementation project(':domain')
+    implementation project(':dat')
+
+
 
     implementation project.navigationComponent
     implementation project.navigationComponentFragment
