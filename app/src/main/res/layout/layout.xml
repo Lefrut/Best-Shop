@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/main_screen"
-    android:orientation="horizontal"
-    tools:ignore="MissingDefaultResource">
+    android:orientation="horizontal">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -42,17 +42,17 @@
             android:layout_marginStart="100dp"
             android:layout_marginTop="23dp"
             android:layout_marginEnd="131dp"
-            android:gravity="center"
             android:fontFamily="@font/montserrat_bold"
-            android:text="@string/trade_by_bata"
-            android:textSize="20sp"
-            app:lineHeight="24dp"
+            android:gravity="center"
             android:letterSpacing="-0.03"
+            android:text="@string/trade_by_bata"
             android:textColor="@color/black"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="@+id/navigation_bar"
             app:layout_constraintStart_toEndOf="@+id/menu"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/navigation_bar" />
+            app:layout_constraintTop_toTopOf="@+id/navigation_bar"
+            app:lineHeight="24dp" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/avatar"
@@ -71,14 +71,14 @@
             android:layout_marginTop="7dp"
             android:layout_marginEnd="2dp"
             android:fontFamily="@font/poppins_regular"
-            android:textSize="10sp"
-            android:text="@string/location"
             android:gravity="top"
-            android:textColor="@color/gray_location"
             android:letterSpacing="-0.03"
-            app:lineHeight="15dp"
+            android:text="@string/location"
+            android:textColor="@color/gray_location"
+            android:textSize="10sp"
             app:layout_constraintEnd_toStartOf="@+id/down_arrow"
             app:layout_constraintTop_toBottomOf="@id/avatar"
+            app:lineHeight="15dp"
             tools:ignore="MissingConstraints,SmallSp" />
 
 
@@ -88,29 +88,11 @@
             android:layout_height="3dp"
             android:layout_marginTop="13dp"
             android:layout_marginEnd="37dp"
+            android:tint="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/avatar"
-            app:srcCompat="@drawable/down_arrow"
-            android:tint="@color/black"/>
+            app:srcCompat="@drawable/down_arrow" />
 
-
-<!--        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="262dp"
-            android:layout_height="23dp"
-            android:layout_marginStart="57dp"
-            android:layout_marginEnd="56dp"
-            android:autofillHints=""
-            android:background="@drawable/background_search_bar"
-            android:cursorVisible="false"
-            android:gravity="center"
-            android:hint="@string/what_are_you_looking_for"
-            android:inputType="text"
-            android:singleLine="true"
-            android:textSize="9sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/navigation_bar"
-            tools:ignore="SmallSp" />-->
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="262dp"
@@ -122,7 +104,7 @@
             app:boxCornerRadiusTopStart="12dp"
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp"
-            app:hintEnabled="false"
+            android:hint="@string/what_are_you_looking_for"
             android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -131,16 +113,17 @@
             android:layout_marginEnd="56dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:background="@drawable/background_search_bar"
                 android:cursorVisible="false"
-                android:hint="@string/what_are_you_looking_for"
+                android:gravity="center"
                 android:inputType="text"
                 android:letterSpacing="-0.03"
                 android:singleLine="true"
                 android:textSize="9sp"
                 app:lineHeight="13dp"
+                android:padding="0dp"
                 tools:ignore="SmallSp,TouchTargetSizeCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
