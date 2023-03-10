@@ -7,6 +7,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import com.dashkevich.dat.di.dataModule
 import com.dashkevich.domain.di.domainModule
+import com.dashkevich.home.di.viewModelModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         startKoin {
             androidLogger()
             androidContext(this@MainActivity)
-            modules(dataModule + domainModule)//+ viewModelModule
+            modules(dataModule + domainModule + viewModelModule)
         }
 
         val navHost = supportFragmentManager
