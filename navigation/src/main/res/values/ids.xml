@@ -8,4 +8,5 @@
     <item name="message" type="id"/>
     <item name="profile" type="id"/>
     <item name="favorite" type="id" />
+    <item name="login_nav_graph" type="id" />
 </resources>
