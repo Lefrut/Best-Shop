@@ -2,8 +2,8 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="174dp"
-    android:layout_height="221dp"
+    android:layout_width="114dp"
+    android:layout_height="149dp"
     app:cardCornerRadius="9dp"
     app:cardElevation="0dp">
 
@@ -86,34 +86,34 @@
             </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
 
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="49dp"
-                android:layout_height="18dp"
-                android:layout_marginStart="21dp"
-                android:layout_marginTop="7dp"
-                app:cardBackgroundColor="@color/page1_card_flash_discount"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="0dp">
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="49dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="7dp"
+                    app:cardBackgroundColor="@color/page1_card_flash_discount"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
 
-                <com.google.android.material.textview.MaterialTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="30% off"
-                    android:textColor="@color/white"
-                    android:textSize="10sp" />
-
-
-            </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="30% off"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
 
 
-        </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
 
         </LinearLayout>
 
