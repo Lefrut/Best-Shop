@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/main_screen"
     android:orientation="horizontal"
-    tools:context=".page1.Page1">
+    tools:context=".page1.Page1Fragment">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout

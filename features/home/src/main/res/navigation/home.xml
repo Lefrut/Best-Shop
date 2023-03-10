@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/home_fragment"
-        android:name="com.dashkevich.home.page1.Page1"
+        android:name="com.dashkevich.home.page1.Page1Fragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_page1" />
 

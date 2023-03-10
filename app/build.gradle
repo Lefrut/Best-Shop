@@ -37,14 +37,14 @@ android {
 }
 
 dependencies {
-    implementation project.koin
-    implementation project.koinAndroid
-
     //modules
     implementation project(':navigation')
     implementation project(':core:ui')
+    implementation project(':core:utility')
+
     implementation project(':dat')
     implementation project(':domain')
+
     implementation project(':features:bottom')
     implementation project(':features:home')
     implementation project(':features:favorite')
@@ -57,6 +57,15 @@ dependencies {
     //libs
     implementation project.navigationComponent
     implementation project.navigationComponentFragment
+
+    implementation project.koin
+    implementation project.koinAndroid
+
+    implementation project.vm
+    implementation project.vmLivedata
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
 
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
