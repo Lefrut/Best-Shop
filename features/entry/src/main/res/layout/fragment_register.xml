@@ -14,7 +14,7 @@
         android:layout_marginTop="121dp"
         android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
-        android:gravity="center_horizontal"
+        android:gravity="center_horizontal|top"
         android:text="@string/sign_in"
         android:textAppearance="@style/TextAppearance.BestShop.TextView.Header"
         >
@@ -87,12 +87,13 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/sign_in_button"
         style="@style/Widget.BestShop.Button.Login"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="35dp"
         android:text="@string/sign_in"
         app:cornerRadius="15dp"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
 
     <RelativeLayout
         android:layout_width="match_parent"
