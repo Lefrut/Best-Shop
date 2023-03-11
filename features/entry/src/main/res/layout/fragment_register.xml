@@ -73,6 +73,7 @@
         style="@style/Widget.BestShop.TextInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
             style="@style/TextAppearance.BestShop.EditText.Login"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

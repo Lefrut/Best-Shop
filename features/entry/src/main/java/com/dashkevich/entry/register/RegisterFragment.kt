@@ -6,10 +6,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.dashkevich.entry.R
 import com.dashkevich.entry.databinding.FragmentLoginBinding
 import com.dashkevich.entry.databinding.FragmentRegisterBinding
+import com.dashkevich.utility.isValidEmail
 
 class RegisterFragment : Fragment(R.layout.fragment_register) {
 
@@ -20,8 +22,11 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
         binding = FragmentRegisterBinding.bind(view)
 
         binding.signInButton.setOnClickListener {
-            findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
+            if (isValidEmail(binding.email.text.toString())) {
+                findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
+            } else {
+                Toast.makeText(requireActivity(), "Не правильно введен email", Toast.LENGTH_SHORT).show()
+            }
         }
-
     }
 }
