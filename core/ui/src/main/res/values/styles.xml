@@ -23,6 +23,7 @@
     <style name="Widget.BestShop.Button.Login" parent="Widget.BestShop.Button">
         <item name="android:layout_width">289dp</item>
         <item name="android:layout_height">46dp</item>
+        <item name="android:textColor">@color/sign_in_button_text_color</item>
         <item name="android:textAppearance">@style/TextAppearance.BestShop.Button.Login</item>
     </style>
 

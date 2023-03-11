@@ -57,6 +57,7 @@
             android:layout_height="match_parent">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
                 style="@style/TextAppearance.BestShop.EditText.Login"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -66,11 +67,12 @@
                 android:hint="@string/password"
                 android:inputType="textPassword"
                 android:padding="0dp"
-                android:paddingEnd="30dp"
+                android:paddingEnd="40dp"
                 tools:ignore="RtlSymmetry,TextContrastCheck,TouchTargetSizeCheck" />
 
 
             <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/visibilityPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/eye_off"
@@ -88,6 +90,7 @@
         style="@style/Widget.BestShop.Button.Login"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="99dp"
+        android:checkable="true"
         android:text="@string/login"
         app:cornerRadius="15dp"
         tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />

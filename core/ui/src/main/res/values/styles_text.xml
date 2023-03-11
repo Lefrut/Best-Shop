@@ -20,7 +20,6 @@
 
     <style name="TextAppearance.BestShop.Button.Login" parent="TextAppearance.AppCompat">
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/sign_in_button_text_color</item>
         <item name="fontFamily">@font/montserrat_bold</item>
         <item name="android:letterSpacing">-0.03</item>
         <item name="lineHeight">17dp</item>
