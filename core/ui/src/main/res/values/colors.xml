@@ -20,6 +20,15 @@
     <color name="page1_card_category_floating_button">#E5E9EFD9</color>
     <color name="page1_card_flash_discount">#F93A3A</color>
 
+    <color name="sign_in_page_background" tools:ignore="MissingDefaultResource">#FAF9FF</color>
+    <color name="sign_in_page_background_edit_text" tools:ignore="MissingDefaultResource">#E8E8E8</color>
+
+    <color name="sign_in_page_header_text">#161826</color>
+    <color name="sign_in_page_text">#7B7B7B</color>
+    <color name="sign_in_background_button">#4E55D7</color>
+    <color name="sign_in_button_text_color">#EAEAEA</color>
+    <color name="sign_in_have_account_text_color">#808080</color>
+    <color name="sign_in_have_account_login_text_color">#254FE6</color>
 
 
 

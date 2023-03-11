@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.BestShop.TextView.Header" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/sign_in_page_header_text</item>
+        <item name="fontFamily">@font/montserrat_semibold</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+
+    <style name="TextAppearance.BestShop.EditText.Login" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/sign_in_page_text</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">13dp</item>
+    </style>
+
+    <style name="TextAppearance.BestShop.Button.Login" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/sign_in_button_text_color</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">17dp</item>
+    </style>
+
+    <style name="TextAppearance.BestShop.HaveAccountText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">12dp</item>
+    </style>
+
+    <style name="TextAppearance.BestShop.HaveAccountText.Default" parent="TextAppearance.BestShop.HaveAccountText">
+        <item name="android:textColor">@color/sign_in_have_account_text_color</item>
+    </style>
+
+    <style name="TextAppearance.BestShop.HaveAccountText.Login" parent="TextAppearance.BestShop.HaveAccountText">
+        <item name="android:textColor">@color/sign_in_have_account_login_text_color</item>
+    </style>
+    
+    
+</resources>

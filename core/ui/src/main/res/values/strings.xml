@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="sign_in_small">Sign in</string>
+    <string name="sign_in">Sign in</string>
     <string name="location">Location</string>
     <string name="trade_by_bata">Trade by <font color="#4E55D7">bata</font></string>
     <string name="what_are_you_looking_for">What are you looking for ?</string>
@@ -10,4 +12,9 @@
     <string name="cars">Cars</string>
     <string name="furniture">Furniture</string>
     <string name="kids">kids</string>
+    <string name="first_name">First name</string>
+    <string name="email">Email</string>
+    <string name="last_name">Last name</string>
+    <string name="already_have_ana_account">Already have an account?</string>
+    <string name="log_in">Log in</string>
 </resources>
