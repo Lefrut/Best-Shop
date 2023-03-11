@@ -45,6 +45,7 @@ dependencies {
     implementation project(':dat')
     implementation project(':domain')
 
+    implementation project(':features:entry')
     implementation project(':features:bottom')
     implementation project(':features:home')
     implementation project(':features:favorite')

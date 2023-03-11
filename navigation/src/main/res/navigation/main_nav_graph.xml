@@ -11,11 +11,6 @@
         android:name="com.dashkevich.navigation.BlankFragment"
         android:label="BlankFragment"
         tools:layout="@layout/fragment_blank">
-        <action
-            android:id="@+id/action_blankFragment_to_login_nav_graph"
-            app:destination="@id/login_nav_graph"
-            app:popUpTo="@id/blankFragment"
-            app:popUpToInclusive="true" />
     </fragment>
 
     <include app:graph="@navigation/bottom" />
@@ -26,7 +21,7 @@
         app:popUpTo="@id/blankFragment"
         app:popUpToInclusive="true"/>
     <action
-        android:id="@+id/action_global_login_nav_graph"
+        android:id="@id/action_global_login_nav_graph"
         app:destination="@id/login_nav_graph"
         app:popUpTo="@id/main_nav_graph"
         app:popUpToInclusive="true"/>

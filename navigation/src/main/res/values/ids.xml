@@ -9,4 +9,7 @@
     <item name="profile" type="id"/>
     <item name="favorite" type="id" />
     <item name="login_nav_graph" type="id" />
+    <item name="action_entryBlankFragment_to_registerFragment" type="id" />
+    <item name="entryBlankFragment" type="id" />
+    <item name="action_global_login_nav_graph" type="id" />
 </resources>
