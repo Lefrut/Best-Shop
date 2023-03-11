@@ -7,8 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="white_transparent">#8FFFFFFF</color>
 
-    <color name="main_screen" tools:ignore="MissingDefaultResource">#FAF9FF</color>
+
+
+    <color name="main_screen">#FAF9FF</color>
     <color name="blue">#4E55D7</color>
     <color name="gray_location">#5B5B5B</color>
     <color name="gray_searchbar">#F5F6F6</color>
