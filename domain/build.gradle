@@ -41,7 +41,7 @@ dependencies {
 
     implementation project.coroutines
 
-    kapt project.roomCompiler
+    annotationProcessor project.roomCompiler
     implementation project.roomCoroutines
     implementation project.roomRuntime
 

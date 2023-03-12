@@ -53,8 +53,6 @@ dependencies {
     implementation project(':features:message')
     implementation project(':features:profile')
 
-
-
     //libs
     implementation project.navigationComponent
     implementation project.navigationComponentFragment

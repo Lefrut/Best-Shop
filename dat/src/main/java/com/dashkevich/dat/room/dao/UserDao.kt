@@ -12,10 +12,10 @@ import kotlinx.coroutines.flow.Flow
 interface UserDao {
 
     @Insert(onConflict = OnConflictStrategy.ABORT)
-    fun insertUsers(vararg users: User)
+    suspend fun insertUsers(vararg users: User)
 
     @Query("SELECT * FROM user")
-    fun getUsers(): Flow<List<User>>
+    fun selectUsers(): Flow<List<User>>
 
     @Query("SELECT email FROM user WHERE email LIKE :uEmail LIMIT 1")
     fun findUser(uEmail: String): Flow<String>

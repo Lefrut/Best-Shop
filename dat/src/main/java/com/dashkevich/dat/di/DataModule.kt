@@ -1,6 +1,10 @@
 package com.dashkevich.dat.di
 
+import android.content.Context
+import androidx.room.Room
+import androidx.room.RoomDatabase
 import com.dashkevich.dat.api.ProductService
+import com.dashkevich.dat.room.AppDataBase
 import org.koin.dsl.module
 import retrofit2.Converter
 import retrofit2.Retrofit
@@ -28,4 +32,14 @@ val retrofitModule = module {
 
 }
 
-val dataModule = module { includes(retrofitModule) }
+val roomModule = module {
+    single{
+        Room.databaseBuilder(
+            get(),
+            AppDataBase::class.java,
+            "best-shop.db"
+        ).build()
+    }
+}
+
+val dataModule = module { includes(retrofitModule, roomModule) }
