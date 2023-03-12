@@ -1,10 +1,9 @@
 package com.dashkevich.entry.sign_in_page
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Toast
-import androidx.fragment.app.viewModels
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
@@ -85,7 +84,6 @@ class SignInPageFragment : Fragment(R.layout.fragment_sign_in_page) {
     override fun onDestroyView() {
         super.onDestroyView()
         clearBinding()
-        signInPageViewModel.clearUIState()
     }
 
     private fun signInButtonClick(firstName: String, lastName: String, email: String) {

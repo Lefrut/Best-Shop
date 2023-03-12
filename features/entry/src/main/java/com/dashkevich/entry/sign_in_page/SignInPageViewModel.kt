@@ -7,8 +7,6 @@ import com.dashkevich.dat.room.entity.User
 import com.dashkevich.domain.repository.LocalDBRepository
 import com.dashkevich.entry.sign_in_page.model.HaveUser
 import com.dashkevich.entry.sign_in_page.model.SignInPageState
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.async
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 
@@ -34,7 +32,7 @@ class SignInPageViewModel(private val localDBRepository: LocalDBRepository) : Vi
 
     fun haveUser(email: String) {
         viewModelScope.launch {
-              localDBRepository.haveUser(email).onEach {
+              localDBRepository.haveEmail(email).onEach {
                   val empty = it.isNullOrEmpty()
                   if (!empty) {
                       _uiState.value = _uiState.value.copy(haveUser = HaveUser.Yes)
@@ -49,10 +47,6 @@ class SignInPageViewModel(private val localDBRepository: LocalDBRepository) : Vi
 
     fun clearHaveUser() {
         _uiState.value = _uiState.value.copy(haveUser = HaveUser.Clear)
-    }
-
-    fun clearUIState(){
-        _uiState.value = SignInPageState()
     }
 
     companion object {

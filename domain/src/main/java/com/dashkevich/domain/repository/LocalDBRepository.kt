@@ -1,9 +1,7 @@
 package com.dashkevich.domain.repository
 
-import android.util.Log
 import com.dashkevich.dat.room.AppDataBase
 import com.dashkevich.dat.room.entity.User
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*
 
 class LocalDBRepository(private val localDB: AppDataBase) {
@@ -15,7 +13,9 @@ class LocalDBRepository(private val localDB: AppDataBase) {
         return@runCatching true
     }
 
-    fun haveUser(email: String): Flow<String?> = userDao.findUser(email)
+    fun haveEmail(email: String): Flow<String?> = userDao.findEmail(email)
+
+    fun getUser(firstName: String, password: String) = userDao.findUser(firstName, password)
 
     suspend fun getUsers(): Result<List<User>> = kotlin.runCatching {
         var value: List<User> = listOf()

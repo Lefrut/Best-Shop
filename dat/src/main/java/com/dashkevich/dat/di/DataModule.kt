@@ -33,11 +33,11 @@ val retrofitModule = module {
 }
 
 val roomModule = module {
-    single{
+    single {
         Room.databaseBuilder(
             get(),
             AppDataBase::class.java,
-            "best-shop.db"
+            "best_shop.db"
         ).build()
     }
 }
