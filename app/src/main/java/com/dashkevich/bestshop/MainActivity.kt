@@ -1,20 +1,14 @@
 package com.dashkevich.bestshop
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.WindowInsetsController
-import androidx.activity.viewModels
-import androidx.core.view.ViewCompat
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.navigation.NavController
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
+import com.dashkevich.bestshop.di.viewModelModule
 import com.dashkevich.dat.di.dataModule
 import com.dashkevich.domain.di.domainModule
-import com.dashkevich.home.di.viewModelModule
-import com.dashkevich.home.page1.Page1ViewModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin

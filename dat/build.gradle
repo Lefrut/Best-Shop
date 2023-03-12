@@ -39,7 +39,7 @@ dependencies {
     implementation project.retrofit_gson
     implementation project.coroutines
 
-    annotationProcessor project.roomCompiler
+    kapt project.roomCompiler
     implementation project.roomCoroutines
     implementation project.roomRuntime
 

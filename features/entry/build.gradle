@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -38,6 +39,8 @@ android {
 dependencies {
     implementation project(":core:ui")
     implementation project(":core:utility")
+    implementation project(":domain")
+    implementation project(":dat")
     implementation project(":navigation")
 
     implementation project.koin
@@ -45,6 +48,12 @@ dependencies {
 
     implementation project.navigationComponent
     implementation project.navigationComponentFragment
+
+    implementation project.vm
+    implementation project.vmLivedata
+
+    implementation project.coroutines
+    implementation project.coroutinesAndroid
 
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'

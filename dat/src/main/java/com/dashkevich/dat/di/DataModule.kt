@@ -42,4 +42,4 @@ val roomModule = module {
     }
 }
 
-val dataModule = module { includes(retrofitModule, roomModule) }
+val dataModule = module { includes(roomModule, retrofitModule) }

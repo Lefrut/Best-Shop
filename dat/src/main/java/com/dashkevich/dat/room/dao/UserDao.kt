@@ -18,5 +18,5 @@ interface UserDao {
     fun selectUsers(): Flow<List<User>>
 
     @Query("SELECT email FROM user WHERE email LIKE :uEmail LIMIT 1")
-    fun findUser(uEmail: String): Flow<String>
+    fun findUser(uEmail: String): Flow<String?>
 }
