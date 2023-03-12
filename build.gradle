@@ -10,7 +10,11 @@ buildscript {
         koin_version = "3.2.2"
         koinAndroid_version = "3.3.0"
         lifecycle = "2.5.1"
+        room_version = "2.4.3"
         //libs
+        roomRuntime = "androidx.room:room-runtime:$room_version"
+        roomCompiler = "androidx.room:room-compiler:$room_version"
+        roomCoroutines = "androidx.room:room-ktx:$room_version"
         vmLivedata = "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle"
         vm = "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle"
         koin = "io.insert-koin:koin-core:$koin_version"
