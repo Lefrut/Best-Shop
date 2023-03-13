@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ProfileFragment"
-    android:background="@color/main_screen">
+    android:background="@color/main_screen"
+    android:orientation="vertical">
 
-    <TextView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Profile" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        app:title="@string/profile"
+        app:titleCentered="true"
+        app:titleMarginTop="32dp"
+        app:titleMarginBottom="18dp"
+        app:titleMarginStart="163dp"
+        app:titleMarginEnd="158dp"
+        app:titleTextColor="@color/black"
+        app:titleTextAppearance="@style/TextAppearance.BestShop.Profile.Title">
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="14dp"
+        app:srcCompat="@drawable/arrow_left" />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

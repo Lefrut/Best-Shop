@@ -34,6 +34,8 @@
     <color name="sign_in_have_account_text_color">#808080</color>
     <color name="sign_in_have_account_login_text_color">#254FE6</color>
 
+    <color name="profile_icon_borders">#C0C0C0</color>
+
 
 
 </resources>

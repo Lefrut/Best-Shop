@@ -47,6 +47,14 @@
     <style name="TextAppearance.BestShop.HaveAccountText.Login" parent="TextAppearance.BestShop.HaveAccountText">
         <item name="android:textColor">@color/sign_in_have_account_login_text_color</item>
     </style>
+
+    <style name="TextAppearance.BestShop.Profile.Title" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">15sp</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">18dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
     
     
 </resources>
