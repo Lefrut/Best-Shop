@@ -8,10 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.dashkevich.entry.R
 import com.dashkevich.utility.convertDpToPixels
 
-class CompanySignInDelegate() : ItemDelegate {
+class CompanySignInDelegate(val onClick: () -> Unit) : ItemDelegate {
 
     override fun isRelativeItem(item: Item): Boolean = item is CompanySignIn
 
@@ -26,12 +27,16 @@ class CompanySignInDelegate() : ItemDelegate {
         val view = LayoutInflater.from(context).inflate(getLayoutId(), parent, false)
         val icon = view.findViewById<ImageView>(R.id.company_icon)
         val text = view.findViewById<TextView>(R.id.company_sign_in)
+        val layout = view.findViewById<ConstraintLayout>(R.id.company_item_layout)
         if(item is CompanySignIn){
             icon.setImageResource(item.icon)
             text.text = context.getString(item.text)
             val px = context.convertDpToPixels(item.iconMarginEnd.toFloat())
             val iconParam = icon.layoutParams as ViewGroup.MarginLayoutParams
             iconParam.setMargins(0, 0, px.toInt(), 0)
+            layout.setOnClickListener {
+                onClick.invoke()
+            }
         }
         return view
     }

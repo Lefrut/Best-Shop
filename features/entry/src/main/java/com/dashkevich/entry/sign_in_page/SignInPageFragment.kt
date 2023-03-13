@@ -83,7 +83,11 @@ class SignInPageFragment : Fragment(R.layout.fragment_sign_in_page) {
             findNavController().navigate(R.id.action_signInPageFragment_to_loginFragment)
         }
 
-        val adapter = DelegateAdapter(listOf(CompanySignInDelegate()))
+        val adapter = DelegateAdapter(
+            listOf(
+                CompanySignInDelegate(onClick = { findNavController().navigate(com.dashkevich.navigation.R.id.action_global_bottom) })
+            )
+        )
         binding.listView.adapter = adapter
         adapter.setItems(
             listOf(
