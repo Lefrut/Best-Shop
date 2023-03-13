@@ -11,6 +11,9 @@ import androidx.navigation.fragment.findNavController
 import com.dashkevich.dat.room.entity.User
 import com.dashkevich.entry.R
 import com.dashkevich.entry.databinding.FragmentSignInPageBinding
+import com.dashkevich.entry.sign_in_page.adapter.DelegateAdapter
+import com.dashkevich.entry.sign_in_page.adapter.model.CompanySignIn
+import com.dashkevich.entry.sign_in_page.adapter.model.CompanySignInDelegate
 import com.dashkevich.entry.sign_in_page.model.HaveUser
 import com.dashkevich.utility.isValidEmail
 import kotlinx.coroutines.Dispatchers
@@ -76,9 +79,27 @@ class SignInPageFragment : Fragment(R.layout.fragment_sign_in_page) {
             )
         }
 
-        binding.log.setOnClickListener{
+        binding.log.setOnClickListener {
             findNavController().navigate(R.id.action_signInPageFragment_to_loginFragment)
         }
+
+        val adapter = DelegateAdapter(listOf(CompanySignInDelegate()))
+        binding.listView.adapter = adapter
+        adapter.setItems(
+            listOf(
+                CompanySignIn(
+                    icon = com.dashkevich.ui.R.drawable.google,
+                    iconMarginEnd = 11,
+                    text = com.dashkevich.ui.R.string.sign_in_with_google
+                ),
+                CompanySignIn(
+                    icon = com.dashkevich.ui.R.drawable.apple,
+                    iconMarginEnd = 13,
+                    text = com.dashkevich.ui.R.string.sign_in_with_apple
+                )
+            )
+        )
+
     }
 
     override fun onDestroyView() {
@@ -102,7 +123,7 @@ class SignInPageFragment : Fragment(R.layout.fragment_sign_in_page) {
         }
     }
 
-    private fun clearBinding(){
+    private fun clearBinding() {
         binding.apply {
             email.setText("")
             lastName.setText("")
