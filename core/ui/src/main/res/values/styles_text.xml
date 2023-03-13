@@ -17,6 +17,14 @@
         <item name="lineHeight">15dp</item>
     </style>
 
+    <style name="TextAppearance.BestShop.Profile.Item" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/profile_card_color</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">17dp</item>
+    </style>
+
 
     <style name="TextAppearance.BestShop.EditText.Login" parent="TextAppearance.AppCompat">
         <item name="android:textSize">11sp</item>

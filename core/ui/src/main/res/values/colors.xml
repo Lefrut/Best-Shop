@@ -38,6 +38,7 @@
     <color name="profile_change_photo">#808080</color>
     <color name="profile_name_shop">#3F3F3F</color>
     <color name="profile_button_text_color">#EAEAEA</color>
+    <color name="profile_card_color">#040402</color>
 
 
 </resources>
