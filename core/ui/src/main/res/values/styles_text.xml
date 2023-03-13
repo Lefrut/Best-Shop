@@ -33,6 +33,14 @@
         <item name="lineHeight">17dp</item>
     </style>
 
+    <style name="TextAppearance.BestShop.Button.Profile" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/montserrat_semibold</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">17dp</item>
+    </style>
+
+
     <style name="TextAppearance.BestShop.HaveAccountText" parent="TextAppearance.AppCompat">
         <item name="android:textSize">10sp</item>
         <item name="fontFamily">@font/montserrat_medium</item>
@@ -53,8 +61,15 @@
         <item name="fontFamily">@font/montserrat_bold</item>
         <item name="android:letterSpacing">-0.03</item>
         <item name="lineHeight">18dp</item>
-        <item name="android:layout_gravity">center</item>
     </style>
+
+    <style name="TextAppearance.BestShop.Profile.ChangePhoto" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">8sp</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">10dp</item>
+    </style>
+
     
     
 </resources>
