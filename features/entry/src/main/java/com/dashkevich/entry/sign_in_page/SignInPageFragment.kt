@@ -11,7 +11,7 @@ import androidx.navigation.fragment.findNavController
 import com.dashkevich.dat.room.entity.User
 import com.dashkevich.entry.R
 import com.dashkevich.entry.databinding.FragmentSignInPageBinding
-import com.dashkevich.entry.sign_in_page.adapter.DelegateAdapter
+import com.dashkevich.utility.adapter.BaseAdapterDelegate
 import com.dashkevich.entry.sign_in_page.adapter.model.CompanySignIn
 import com.dashkevich.entry.sign_in_page.adapter.model.CompanySignInDelegate
 import com.dashkevich.entry.sign_in_page.model.HaveUser
@@ -83,7 +83,7 @@ class SignInPageFragment : Fragment(R.layout.fragment_sign_in_page) {
             findNavController().navigate(R.id.action_signInPageFragment_to_loginFragment)
         }
 
-        val adapter = DelegateAdapter(
+        val adapter = BaseAdapterDelegate(
             listOf(
                 CompanySignInDelegate(onClick = { findNavController().navigate(com.dashkevich.navigation.R.id.action_global_bottom) })
             )

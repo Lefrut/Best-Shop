@@ -1,14 +1,12 @@
-package com.dashkevich.entry.sign_in_page.adapter
+package com.dashkevich.utility.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import com.dashkevich.entry.sign_in_page.adapter.model.Item
-import com.dashkevich.entry.sign_in_page.adapter.model.ItemDelegate
 
-class DelegateAdapter(
+class BaseAdapterDelegate(
     private var itemsDelegate: List<ItemDelegate>,
 ) : BaseAdapter() {
 

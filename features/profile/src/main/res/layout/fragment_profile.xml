@@ -111,6 +111,21 @@
 
     </com.google.android.material.card.MaterialCardView>
 
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="25dp"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:layout_marginBottom="77dp"
+        android:scrollbars="none"
+        >
+
+    </ListView>
 
 
 </LinearLayout>

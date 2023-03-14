@@ -10,14 +10,13 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <!--<item name="android:statusBarColor">?attr/colorOnPrimary</item>-->
+        <!--<item name="android:statusBarColor">@color/main_screen</item>-->
         <!-- Customize your theme here. -->
     </style>
 
     <style name="Base.Theme.BestShop" parent="Base.V21.Theme.Light.BestShop">
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@color/white_transparent</item>
-
     </style>
 
     <style name="Theme.BestShop" parent="Base.Theme.BestShop"/>

@@ -1,8 +1,6 @@
 package com.dashkevich.entry.sign_in_page.adapter.model
 
 import android.content.Context
-import android.content.res.Resources
-import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +8,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.dashkevich.entry.R
+import com.dashkevich.utility.adapter.Item
+import com.dashkevich.utility.adapter.ItemDelegate
 import com.dashkevich.utility.convertDpToPixels
+import com.dashkevich.utility.setMargins
 
 class CompanySignInDelegate(val onClick: () -> Unit) : ItemDelegate {
 
@@ -32,8 +33,7 @@ class CompanySignInDelegate(val onClick: () -> Unit) : ItemDelegate {
             icon.setImageResource(item.icon)
             text.text = context.getString(item.text)
             val px = context.convertDpToPixels(item.iconMarginEnd.toFloat())
-            val iconParam = icon.layoutParams as ViewGroup.MarginLayoutParams
-            iconParam.setMargins(0, 0, px.toInt(), 0)
+            icon.setMargins(0, 0, px.toInt(), 0)
             layout.setOnClickListener {
                 onClick.invoke()
             }

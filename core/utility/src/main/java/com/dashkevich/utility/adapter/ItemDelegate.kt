@@ -1,4 +1,4 @@
-package com.dashkevich.entry.sign_in_page.adapter.model
+package com.dashkevich.utility.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
