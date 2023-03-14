@@ -9,6 +9,9 @@
         <item name="lineHeight">32dp</item>
     </style>
 
+
+
+
     <style name="TextAppearance.BestShop.TextView.Company" parent="TextAppearance.AppCompat">
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/black</item>
@@ -76,6 +79,28 @@
         <item name="fontFamily">@font/montserrat_medium</item>
         <item name="android:letterSpacing">-0.03</item>
         <item name="lineHeight">10dp</item>
+    </style>
+
+
+    <style name="TextAppearance.BestShop.Page1.Head" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">24dp</item>
+    </style>
+
+    <style name="TextAppearance.BestShop.Page1.Icon" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">15dp</item>
+    </style>
+
+    <style name="TextAppearance.BestShop.Page1.Search" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">9sp</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">13dp</item>
     </style>
 
     
