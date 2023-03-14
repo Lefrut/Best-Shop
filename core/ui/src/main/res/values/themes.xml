@@ -15,8 +15,8 @@
     </style>
 
     <style name="Base.Theme.BestShop" parent="Base.V21.Theme.Light.BestShop">
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:navigationBarColor">@color/white_transparent</item>
+        <item name="android:statusBarColor">@color/main_screen</item>
+        <item name="android:navigationBarColor">@color/main_screen</item>
     </style>
 
     <style name="Theme.BestShop" parent="Base.Theme.BestShop"/>

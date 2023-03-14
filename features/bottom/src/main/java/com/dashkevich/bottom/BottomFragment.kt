@@ -20,13 +20,12 @@ class BottomFragment : Fragment(R.layout.fragment_bottom) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentBottomBinding.bind(view)
-
-
+        requireActivity().window.navigationBarColor = resources.getColor(R.color.bottom_bar)
         val navHost = childFragmentManager
             .findFragmentById(R.id.bottom_container) as NavHostFragment
         navController = navHost.navController
-
         binding.bottomNav.setupWithNavController(navController)
+
     }
 
 }

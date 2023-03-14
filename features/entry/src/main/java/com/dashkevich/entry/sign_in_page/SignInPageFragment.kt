@@ -29,6 +29,7 @@ class SignInPageFragment : Fragment(R.layout.fragment_sign_in_page) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentSignInPageBinding.bind(view)
 
+        requireActivity().window.navigationBarColor = resources.getColor(com.dashkevich.ui.R.color.main_screen)
         val firstName = binding.firstName
         val lastName = binding.lastName
         val email = binding.email

@@ -11,14 +11,15 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:layout_width="match_parent"
             android:layout_height="66dp"
             app:title="@string/profile"
             app:titleCentered="true"
-            app:titleMarginTop="32dp"
+            app:titleMarginTop="33dp"
             app:titleMarginBottom="18dp"
             app:titleMarginStart="163dp"
             app:titleMarginEnd="158dp"
