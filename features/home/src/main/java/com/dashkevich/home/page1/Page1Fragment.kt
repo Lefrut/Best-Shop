@@ -7,17 +7,13 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.dashkevich.dat.api.model.FlashSaleItem
+import com.dashkevich.dat.api.model.LatestItem
 import com.dashkevich.home.R
 import com.dashkevich.home.databinding.FragmentPage1Binding
 import com.dashkevich.home.page1.adapter.Adapter
-import com.dashkevich.home.page1.adapter.delegates.CategoryDelegate
-import com.dashkevich.home.page1.adapter.delegates.FlashSaleDelegate
-import com.dashkevich.home.page1.adapter.delegates.LatestDelegate
-import com.dashkevich.home.page1.adapter.delegates.TitleDelegate
-import com.dashkevich.home.page1.adapter.model.Category
-import com.dashkevich.home.page1.adapter.model.FlashSaleUI
-import com.dashkevich.home.page1.adapter.model.LatestUI
-import com.dashkevich.home.page1.adapter.model.Title
+import com.dashkevich.home.page1.adapter.delegates.*
+import com.dashkevich.home.page1.adapter.model.*
 import com.dashkevich.home.page1.model.ScreenStatus
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -35,27 +31,22 @@ class Page1Fragment : Fragment(R.layout.fragment_page1) {
         val adapter = Adapter(
             listOf(
                 TitleDelegate(),
-                LatestDelegate(),
-                FlashSaleDelegate(),
-                CategoryDelegate()
+                HorizontalItemsDelegate(
+                    listOf(
+                        LatestDelegate(),
+                        FlashSaleDelegate(),
+                        CategoryDelegate(),
+                    )
+                )
             )
         )
         binding.recyclerView.adapter = adapter
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
         adapter.setItems(
             listOf(
-                Category(com.dashkevich.ui.R.drawable.phone_category, "Phone"),
-                Title(text = "Latest", margin = 29),
-                LatestUI(category = "phone", title = "Samsung", price = 100, ""),
-                Title(text = "Flash Sale"),
-                FlashSaleUI(
-                    category = "phone",
-                    title = "Samsung",
-                    price = 100,
-                    discount = 30,
-                    image = ""
+                HorizontalItems(
+                    Category.list
                 ),
-                Title(text = "Brands")
             )
         )
 
@@ -65,7 +56,22 @@ class Page1Fragment : Fragment(R.layout.fragment_page1) {
                     state.apply {
                         when (screenStatus) {
                             ScreenStatus.Success -> {
-
+                                adapter.setItems(
+                                    listOf(
+                                        HorizontalItems(
+                                            Category.list
+                                        ),
+                                        Title(text = "Latest", margin = 29),
+                                        HorizontalItems(
+                                            latest.latest.toLatestUI()
+                                        ),
+                                        Title(text = "Flash Sale"),
+                                        HorizontalItems(
+                                            flashSale.flashSale.toFlashSaleUI()
+                                        ),
+                                        Title(text = "Brands")
+                                    )
+                                )
                             }
                             ScreenStatus.Error -> {
 
@@ -92,6 +98,29 @@ class Page1Fragment : Fragment(R.layout.fragment_page1) {
 
     companion object {
         const val TAG = "Page1Fragment"
+    }
+
+    fun List<LatestItem>.toLatestUI(): List<LatestUI>{
+        return map{
+            LatestUI(
+                category = it.category,
+                title = it.name,
+                image = it.image_url,
+                price = it.price
+            )
+        }
+    }
+
+    fun List<FlashSaleItem>.toFlashSaleUI(): List<FlashSaleUI>{
+        return map{
+            FlashSaleUI(
+                category = it.category,
+                title = it.name,
+                image = it.image_url,
+                price = it.price,
+                discount = it.discount
+            )
+        }
     }
 
 }

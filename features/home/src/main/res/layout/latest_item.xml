@@ -6,7 +6,9 @@
     android:layout_height="149dp"
     android:layout_marginTop="8dp"
     app:cardCornerRadius="9dp"
-    app:cardElevation="0dp">
+    app:cardElevation="0dp"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp">
 
 
     <FrameLayout
@@ -18,7 +20,7 @@
             android:id="@+id/latest_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
+            android:scaleType="centerInside"
             app:srcCompat="@drawable/test_image" />
 
 
