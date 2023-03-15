@@ -103,6 +103,19 @@
         <item name="lineHeight">13dp</item>
     </style>
 
+    <style name="TextAppearance.BestShop.Page1.Title" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">15sp</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">22dp</item>
+    </style>
+
+    <style name="TextAppearance.BestShop.Page1.ViewAll" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">9sp</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">13dp</item>
+    </style>
     
     
 </resources>

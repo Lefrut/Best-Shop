@@ -9,11 +9,11 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.dashkevich.entry.R
 import com.dashkevich.utility.adapter.Item
-import com.dashkevich.utility.adapter.ItemDelegate
+import com.dashkevich.utility.adapter.ItemBaseDelegate
 import com.dashkevich.utility.convertDpToPixels
 import com.dashkevich.utility.setMargins
 
-class CompanySignInDelegate(val onClick: () -> Unit) : ItemDelegate {
+class CompanySignInDelegate(val onClick: () -> Unit) : ItemBaseDelegate {
 
     override fun isRelativeItem(item: Item): Boolean = item is CompanySignIn
 

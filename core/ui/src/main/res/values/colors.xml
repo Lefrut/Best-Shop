@@ -21,7 +21,7 @@
     <color name="page1_category_text">#A6A7AB</color>
     <color name="page1_card_category">#C4C4C4D9</color>
     <color name="page1_card_category_text">#070604</color>
-    <color name="page1_card_category_floating_button">#E5E9EFD9</color>
+    <color name="page1_card_category_floating_button">#D9E9EFD9</color>
     <color name="page1_card_flash_discount">#F93A3A</color>
 
     <color name="sign_in_page_background" tools:ignore="MissingDefaultResource">#FAF9FF</color>

@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".BottomFragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:backgroundTint="@color/main_screen">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/bottom_container"
@@ -21,6 +22,7 @@
         app:layout_constraintBottom_toTopOf="@id/bottom_nav"/>
 
 
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
         app:menu="@menu/bottom_menu"
@@ -33,8 +35,12 @@
         app:itemIconSize="15dp"
         app:itemIconTint="@drawable/item_selector"
         app:itemRippleColor="@color/icon_ripple"
-        app:itemBackground="@drawable/item_background_selector"
         android:background="@drawable/rectangle"/>
+
+
+    <!--app:itemBackground="@drawable/item_background_selector"-->
+
+
 
 
 

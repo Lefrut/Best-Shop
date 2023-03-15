@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="114dp"
     android:layout_height="149dp"
+    android:layout_marginTop="8dp"
     app:cardCornerRadius="9dp"
     app:cardElevation="0dp">
 
@@ -14,6 +15,7 @@
 
 
         <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/latest_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
 
@@ -43,54 +45,64 @@
                     app:cardElevation="0dp">
 
                     <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/latest_category"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="@string/phones"
                         android:textColor="@color/page1_card_category_text"
                         android:textSize="6sp"
-                        tools:ignore="SmallSp" />
+                        tools:ignore="SmallSp,TextContrastCheck" />
 
 
                 </com.google.android.material.card.MaterialCardView>
 
 
                 <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/latest_title"
                     android:layout_width="75dp"
                     android:layout_height="26dp"
                     android:layout_marginStart="7dp"
                     android:layout_marginTop="3dp"
                     android:gravity="top|start"
-                    android:text="Samsung S10"
+                    android:text="@string/samsung_s10"
                     android:textColor="@color/white"
-                    android:textSize="9sp" />
+                    android:textSize="9sp"
+                    tools:ignore="SmallSp" />
 
                 <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/latest_price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="7dp"
                     android:layout_marginTop="1dp"
                     android:gravity="top|start"
-                    android:text="$ 180,000"
+                    android:text="@string/_180_000"
                     android:textColor="@color/white"
-                    android:textSize="7sp" />
+                    android:textSize="7sp"
+                    tools:ignore="SmallSp" />
 
             </LinearLayout>
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginStart="7dp"
                 android:layout_marginTop="124dp"
                 android:layout_marginBottom="5dp"
-                android:elevation="0dp"
-                app:backgroundTint="@color/page1_card_category_floating_button"
-                app:elevation="10dp"
-                app:fabCustomSize="48dp"
-                app:srcCompat="@drawable/plus_floating"
-                app:useCompatPadding="true"
-                tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10000dp"
+                app:cardBackgroundColor="@color/page1_card_category_floating_button">
 
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:srcCompat="@drawable/plus"
+                    android:layout_gravity="center"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
 
         </LinearLayout>
 

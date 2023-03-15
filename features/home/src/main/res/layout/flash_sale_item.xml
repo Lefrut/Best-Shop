@@ -2,8 +2,9 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="114dp"
-    android:layout_height="149dp"
+    android:layout_width="174dp"
+    android:layout_height="221dp"
+    android:layout_marginTop="8dp"
     app:cardCornerRadius="9dp"
     app:cardElevation="0dp">
 
@@ -27,18 +28,19 @@
             android:orientation="horizontal">
 
 
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/flash_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/flash_sale_icon"
                     android:layout_marginStart="7dp"
-                    android:layout_marginTop="7dp"/>
+                    android:layout_marginTop="7dp"
+                    app:srcCompat="@drawable/flash_sale_icon"
+                    tools:ignore="ImageContrastCheck" />
 
 
                 <com.google.android.material.card.MaterialCardView
@@ -51,37 +53,41 @@
                     app:cardElevation="0dp">
 
                     <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/flash_category"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="@string/kids"
                         android:textColor="@color/page1_card_category_text"
                         android:textSize="6sp"
-                        tools:ignore="SmallSp" />
+                        tools:ignore="SmallSp,TextContrastCheck" />
 
 
                 </com.google.android.material.card.MaterialCardView>
 
 
                 <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/flash_title"
                     android:layout_width="87dp"
                     android:layout_height="36dp"
                     android:layout_marginStart="9dp"
                     android:layout_marginTop="6dp"
                     android:gravity="top|start"
-                    android:text="New balance sneakers"
+                    android:text="@string/new_balance_sneakers"
                     android:textColor="@color/white"
                     android:textSize="13sp" />
 
                 <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/flash_price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="12dp"
                     android:gravity="top|start"
-                    android:text="$ 180,000"
+                    android:text="@string/_33_00"
                     android:textColor="@color/white"
-                    android:textSize="10sp" />
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp,TextContrastCheck" />
 
             </LinearLayout>
 
@@ -89,8 +95,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical">
 
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="49dp"
@@ -102,15 +107,43 @@
                     app:cardElevation="0dp">
 
                     <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/flash_discount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="30% off"
+                        android:text="@string/_30_off"
                         android:textColor="@color/white"
-                        android:textSize="10sp" />
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp,TextContrastCheck" />
 
 
                 </com.google.android.material.card.MaterialCardView>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="158dp"
+                        android:layout_marginStart="6dp"
+                        app:srcCompat="@drawable/floating_button_favorite" />
+
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="154dp"
+                        app:srcCompat="@drawable/floating_button_plus"
+                        tools:ignore="ImageContrastCheck" />
+
+
+                </LinearLayout>
 
 
             </LinearLayout>

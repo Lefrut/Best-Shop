@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 
 class BaseAdapterDelegate(
-    private var itemsDelegate: List<ItemDelegate>,
+    private var itemsDelegate: List<ItemBaseDelegate>,
 ) : BaseAdapter() {
 
     private val items: MutableList<Item> = mutableListOf()

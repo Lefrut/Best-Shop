@@ -41,6 +41,7 @@ dependencies {
 
     //implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.7.20'
 
+    implementation project.vm
 
     implementation project.navigationComponent
     implementation project.navigationComponentFragment

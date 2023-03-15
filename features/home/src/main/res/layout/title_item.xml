@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="11dp"
+    android:layout_marginEnd="11dp"
+    tools:ignore="MissingDefaultResource">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_gravity="start|bottom"
+        android:text="@string/latest"
+        android:textAppearance="@style/TextAppearance.BestShop.Page1.Title"
+        android:textColor="@color/profile_card_color"/>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="8dp"
+        android:text="@string/view_all"
+        android:textAppearance="@style/TextAppearance.BestShop.Page1.ViewAll"
+        android:textColor="@color/sign_in_have_account_text_color"
+        tools:ignore="TextContrastCheck" />
+
+</FrameLayout>

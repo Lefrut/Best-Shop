@@ -5,7 +5,8 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    android:layout_marginTop="1dp">
 
 
     <FrameLayout
@@ -20,6 +21,7 @@
 
 
         <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/category_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/cars_category"
@@ -29,9 +31,10 @@
 
 
     <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/category_title"
         android:layout_width="wrap_content"
         android:layout_height="10dp"
-        android:text="Phones"
+        android:text="@string/phones"
         android:fontFamily="@font/poppins_medium"
         android:textSize="8sp"
         android:textColor="@color/page1_category_text"
