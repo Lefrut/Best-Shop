@@ -3,6 +3,7 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
 }
 dependencyResolutionManagement {
@@ -10,6 +11,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://www.jitpack.io' }
     }
 }
 rootProject.name = "Best Shop"
@@ -26,3 +28,7 @@ include ':features:shop'
 include ':features:message'
 include ':features:profile'
 include ':core:utility'
+
+
+//maven { url 'https://jitpack.io' }
+

@@ -40,5 +40,6 @@
     <color name="profile_button_text_color">#EAEAEA</color>
     <color name="profile_card_color">#040402</color>
 
+    <color name="bottom_bar_color" tools:ignore="MissingDefaultResource">#909090</color>
 
 </resources>
