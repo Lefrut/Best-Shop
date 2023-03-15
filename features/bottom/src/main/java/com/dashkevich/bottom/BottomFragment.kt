@@ -25,7 +25,6 @@ class BottomFragment : Fragment(R.layout.fragment_bottom) {
             .findFragmentById(R.id.bottom_container) as NavHostFragment
         navController = navHost.navController
         binding.bottomNav.setupWithNavController(navController)
-
     }
 
 }

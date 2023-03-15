@@ -17,7 +17,7 @@
 
 
     <style name="Widget.BestShop.Button" parent="Widget.MaterialComponents.Button">
-        <item name="color">@color/sign_in_background_button</item>
+        <item name="backgroundTint">@color/sign_in_background_button</item>
         <item name="android:insetTop">0dp</item>
         <item name="android:insetBottom">0dp</item>
     </style>

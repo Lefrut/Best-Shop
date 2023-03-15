@@ -1,24 +1,21 @@
 package com.dashkevich.profile.model
 
-import android.R.attr
 import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.FrameLayout
 import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.view.isVisible
 import com.dashkevich.profile.R
 import com.dashkevich.utility.adapter.Item
-import com.dashkevich.utility.adapter.ItemDelegate
+import com.dashkevich.utility.adapter.ItemBaseDelegate
 import com.dashkevich.utility.convertDpToPixels
 import com.dashkevich.utility.setMargins
 
 
-class ProfileItemDelegate(): ItemDelegate {
+class ProfileItemDelegate(): ItemBaseDelegate {
     override fun isRelativeItem(item: Item): Boolean = item is ProfileItem
 
     override fun getLayoutId(): Int = R.layout.profile_item
