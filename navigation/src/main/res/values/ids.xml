@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bottom_bar_nav_graph" type="id"/>
+    <item name="home" type="id"/>
+    <item name="main_nav_graph" type="id"/>
+    <item name="bottom" type="id"/>
+    <item name="shop" type="id"/>
+    <item name="message" type="id"/>
+    <item name="profile" type="id"/>
+    <item name="favorite" type="id" />
+    <item name="login_nav_graph" type="id" />
+    <item name="action_entryBlankFragment_to_registerFragment" type="id" />
+    <item name="entryBlankFragment" type="id" />
+    <item name="action_global_login_nav_graph" type="id" />
+    <item name="main_container" type="id"/>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.BestShop.TextView.Header" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/sign_in_page_header_text</item>
+        <item name="fontFamily">@font/montserrat_semibold</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">32dp</item>
+    </style>
+
+
+
+
+    <style name="TextAppearance.BestShop.TextView.Company" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">15dp</item>
+    </style>
+
+    <style name="TextAppearance.BestShop.Profile.Item" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/profile_card_color</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">17dp</item>
+    </style>
+
+
+    <style name="TextAppearance.BestShop.EditText.Login" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/sign_in_page_text</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">13dp</item>
+    </style>
+
+    <style name="TextAppearance.BestShop.Button.Login" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">17dp</item>
+    </style>
+
+    <style name="TextAppearance.BestShop.Button.Profile" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/montserrat_semibold</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">17dp</item>
+    </style>
+
+
+    <style name="TextAppearance.BestShop.HaveAccountText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">12dp</item>
+    </style>
+
+    <style name="TextAppearance.BestShop.HaveAccountText.Default" parent="TextAppearance.BestShop.HaveAccountText">
+        <item name="android:textColor">@color/sign_in_have_account_text_color</item>
+    </style>
+
+    <style name="TextAppearance.BestShop.HaveAccountText.Login" parent="TextAppearance.BestShop.HaveAccountText">
+        <item name="android:textColor">@color/sign_in_have_account_login_text_color</item>
+    </style>
+
+    <style name="TextAppearance.BestShop.Profile.Title" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">15sp</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">18dp</item>
+    </style>
+
+    <style name="TextAppearance.BestShop.Profile.ChangePhoto" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">8sp</item>
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">10dp</item>
+    </style>
+
+
+    <style name="TextAppearance.BestShop.Page1.Head" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">24dp</item>
+    </style>
+
+    <style name="TextAppearance.BestShop.Page1.Icon" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">15dp</item>
+    </style>
+
+    <style name="TextAppearance.BestShop.Page1.Search" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">9sp</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="lineHeight">13dp</item>
+    </style>
+
+    
+    
+</resources>

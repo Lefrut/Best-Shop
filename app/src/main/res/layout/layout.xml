@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_screen"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            app:title="@string/profile"
+            app:titleCentered="true"
+            app:titleMarginBottom="18dp"
+            app:titleMarginEnd="158dp"
+            app:titleMarginStart="163dp"
+            app:titleMarginTop="32dp"
+            app:titleTextAppearance="@style/TextAppearance.BestShop.Profile.Title"
+            app:titleTextColor="@color/black">
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="14dp"
+            app:srcCompat="@drawable/arrow_left" />
+
+
+    </FrameLayout>
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        app:srcCompat="@drawable/profile_icon"
+        app:strokeColor="@color/profile_icon_borders"
+        app:strokeWidth="1dp" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="69dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="@string/change_photo"
+        android:textAppearance="@style/TextAppearance.BestShop.Profile.ChangePhoto"
+        android:textColor="@color/profile_change_photo"
+        tools:ignore="TextContrastCheck" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="168dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="@string/satria_adhi_pradana"
+        android:textAppearance="@style/TextAppearance.BestShop.Profile.Title"
+        android:textColor="@color/profile_name_shop" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/sign_in_background_button"
+        >
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:background="@color/transparent"
+            android:insetTop = "0dp"
+            android:insetBottom = "0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/upload_item"
+            android:textColor="@color/profile_button_text_color"
+            android:textAppearance="@style/TextAppearance.BestShop.Button.Profile"
+            android:gravity="center"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck">
+
+
+        </com.google.android.material.button.MaterialButton>
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/share"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="12dp" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

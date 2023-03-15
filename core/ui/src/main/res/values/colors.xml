@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="white_transparent">#8FFFFFFF</color>
+
+
+
+    <color name="main_screen">#FAF9FF</color>
+    <color name="blue">#4E55D7</color>
+    <color name="gray_location">#5B5B5B</color>
+    <color name="gray_searchbar">#F5F6F6</color>
+
+    <color name="page1_category_circle">#EEEFF4</color>
+    <color name="page1_category_text">#A6A7AB</color>
+    <color name="page1_card_category">#C4C4C4D9</color>
+    <color name="page1_card_category_text">#070604</color>
+    <color name="page1_card_category_floating_button">#E5E9EFD9</color>
+    <color name="page1_card_flash_discount">#F93A3A</color>
+
+    <color name="sign_in_page_background" tools:ignore="MissingDefaultResource">#FAF9FF</color>
+    <color name="sign_in_page_background_edit_text" tools:ignore="MissingDefaultResource">#E8E8E8</color>
+
+    <color name="sign_in_page_header_text">#161826</color>
+    <color name="sign_in_page_text">#7B7B7B</color>
+    <color name="sign_in_background_button">#4E55D7</color>
+    <color name="sign_in_button_text_color">#EAEAEA</color>
+    <color name="sign_in_have_account_text_color">#808080</color>
+    <color name="sign_in_have_account_login_text_color">#254FE6</color>
+
+    <color name="profile_icon_borders">#C0C0C0</color>
+    <color name="profile_change_photo">#808080</color>
+    <color name="profile_name_shop">#3F3F3F</color>
+    <color name="profile_button_text_color">#EAEAEA</color>
+    <color name="profile_card_color">#040402</color>
+
+
+</resources>
